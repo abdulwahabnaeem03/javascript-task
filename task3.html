@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var age = 15;
+      alert("I am " + age + " years old");
+      // task2
+      var visitCount = localStorage.getItem("visitCount");
+      if (visitCount === null) {
+        visitCount = 0;
+      }
+      visitCount = parseInt(visitCount) + 1;
+      localStorage.setItem("visitCount", visitCount);
+      alert("You have visited this site " + visitCount + " times");
+      //   task3
+      var birthYear = 2004; // Replace with your actual birth year
+      document.write("My birth year is " + birthYear ) ;
+      
+    //   task4
+    var visitorName = "\nJohn Doe";
+var productTitle = "T-shirt";
+var quantity = 5;
+
+document.write("<b>" + visitorName + "</b> ordered <b>" + quantity + " " + productTitle + "(s)</b> on XYZ Clothing store.");
+
+</script>
+  </body>
+</html>
